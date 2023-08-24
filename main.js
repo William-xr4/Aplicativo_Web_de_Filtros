@@ -7,12 +7,12 @@ var noseY=0;
 var bigode;
 
 function preload(){
-    bigode=loadImage("https://postimg.cc/Xpfs221n");
+    bigode=loadImage("Bigode.png"); //o link da imagem que stava sendo utilizado estava bugando o site, coloquei o nome do arquivo que já estava na pasta
 }
 
 function setup(){
-    canvas=createCanvas(350, 300);
-    canvas.center();
+    canvas=createCanvas(450, 400);
+    canvas.position(670, 280); //precisei mudar a função center() para a position para o canvas ficar melhor posicionado
     video=createCapture(VIDEO);
     video.size(350, 300);
     video.hide();
@@ -25,7 +25,7 @@ function modelLoaded(){
 }
 
 function draw(){
-    image(video, 0, 0, 350, 300);
+    image(video, 0, 0, 480, 430);
     // fill("black");
     // stroke("black");
     // imageMode(CENTER);

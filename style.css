@@ -4,12 +4,15 @@ body{
 .Headers{
     color:white !important;
 }
-#canvas{
+
+/*Tirei o simbolo de id pois queremos estilizar o canvas criado pelo P5.js*/
+canvas{
     border:3px double rgb(0, 150, 255);
     width:450px;
     height:350px;
 }
 .copy_right_footer{
+    position:fixed;
     bottom:0px;
     width:100%;
     font-size:20px;
